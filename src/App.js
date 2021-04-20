@@ -12,13 +12,15 @@ class App extends Component {
 
   //Your code here:
 
-
-
-
-
-
-
-
+  // Note: When writing lifecycle methods, avoid using arrow functions - 
+  // while they may work in browser, we want these methods to exist on the prototype chain of 
+  // whatever JavaScript class we've created. 
+  // Lifecycle methods written using arrow functions will not exist on the prototype chain and will not pass the tests in this lab.
+  
+  
+  componentDidMount() {
+    this.handleAddTimer()
+  }
 
   // No need to modify anything in render or the class methods below
   // Unless, of course, you're curious about how it all works
